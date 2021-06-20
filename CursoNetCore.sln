@@ -3,7 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoWorking.Api", "CoWorking.Api\CoWorking.Api.csproj", "{FAFE28B6-0C0F-42F9-9887-DC8D7017DAAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoWorking.Api", "CoWorking.Api\CoWorking.Api.csproj", "{FAFE28B6-0C0F-42F9-9887-DC8D7017DAAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Layers", "1.Layers", "{3D4872F0-9EDC-4D65-BB71-B61BE21DC5B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application", "2.Application", "{6D6EC94A-2EB3-4C07-839C-A06FF023CD05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Business", "3.Business", "{A5FD2153-1F2C-489C-8CE5-9DC616576910}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infrastructure", "4.Infrastructure", "{A89EE2B0-0D8B-4C56-A036-82650B0BB0BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoWorking.Application.Services", "CoWorking.Application\CoWorking.Application.Services.csproj", "{90945CEF-8678-4395-BA38-20E827F7D7E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoWorking.Aplication.Contracts", "CoWorking.Aplication.Contracts\CoWorking.Aplication.Contracts.csproj", "{7CBA6918-CAB5-4E6F-AFBC-D5D6995D68EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoWorking.Business", "CoWorking.Business\CoWorking.Business.csproj", "{EFCA415A-D133-4E88-AD0E-6D146FFCC12C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoWorking.DAO", "CoWorking.DAO\CoWorking.DAO.csproj", "{53B44FEA-AEF2-4188-905C-CE4F718082B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoWorking.DAO.Contracts", "CoWorking.DAO.Contracts\CoWorking.DAO.Contracts.csproj", "{EA8EC6C1-8BC5-418A-8E78-5B6B8721CBA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Cross-Cutting", "5.Cross-Cutting", "{9D476122-9FCB-47B9-8840-B43C369CDC59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoWorking.Cross.Cutting", "CoWorking.Cross.Cutting\CoWorking.Cross.Cutting.csproj", "{680687F9-BE60-494F-80CE-400407F08FAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +37,42 @@ Global
 		{FAFE28B6-0C0F-42F9-9887-DC8D7017DAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAFE28B6-0C0F-42F9-9887-DC8D7017DAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAFE28B6-0C0F-42F9-9887-DC8D7017DAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90945CEF-8678-4395-BA38-20E827F7D7E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90945CEF-8678-4395-BA38-20E827F7D7E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90945CEF-8678-4395-BA38-20E827F7D7E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90945CEF-8678-4395-BA38-20E827F7D7E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CBA6918-CAB5-4E6F-AFBC-D5D6995D68EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CBA6918-CAB5-4E6F-AFBC-D5D6995D68EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CBA6918-CAB5-4E6F-AFBC-D5D6995D68EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CBA6918-CAB5-4E6F-AFBC-D5D6995D68EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCA415A-D133-4E88-AD0E-6D146FFCC12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCA415A-D133-4E88-AD0E-6D146FFCC12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCA415A-D133-4E88-AD0E-6D146FFCC12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCA415A-D133-4E88-AD0E-6D146FFCC12C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B44FEA-AEF2-4188-905C-CE4F718082B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B44FEA-AEF2-4188-905C-CE4F718082B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B44FEA-AEF2-4188-905C-CE4F718082B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B44FEA-AEF2-4188-905C-CE4F718082B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA8EC6C1-8BC5-418A-8E78-5B6B8721CBA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA8EC6C1-8BC5-418A-8E78-5B6B8721CBA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA8EC6C1-8BC5-418A-8E78-5B6B8721CBA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA8EC6C1-8BC5-418A-8E78-5B6B8721CBA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{680687F9-BE60-494F-80CE-400407F08FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{680687F9-BE60-494F-80CE-400407F08FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{680687F9-BE60-494F-80CE-400407F08FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{680687F9-BE60-494F-80CE-400407F08FAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAFE28B6-0C0F-42F9-9887-DC8D7017DAAF} = {3D4872F0-9EDC-4D65-BB71-B61BE21DC5B2}
+		{90945CEF-8678-4395-BA38-20E827F7D7E2} = {6D6EC94A-2EB3-4C07-839C-A06FF023CD05}
+		{7CBA6918-CAB5-4E6F-AFBC-D5D6995D68EE} = {6D6EC94A-2EB3-4C07-839C-A06FF023CD05}
+		{EFCA415A-D133-4E88-AD0E-6D146FFCC12C} = {A5FD2153-1F2C-489C-8CE5-9DC616576910}
+		{53B44FEA-AEF2-4188-905C-CE4F718082B8} = {A89EE2B0-0D8B-4C56-A036-82650B0BB0BA}
+		{EA8EC6C1-8BC5-418A-8E78-5B6B8721CBA5} = {A89EE2B0-0D8B-4C56-A036-82650B0BB0BA}
+		{680687F9-BE60-494F-80CE-400407F08FAC} = {9D476122-9FCB-47B9-8840-B43C369CDC59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B616395-0A1F-48A9-8114-65F25BC86EA3}
